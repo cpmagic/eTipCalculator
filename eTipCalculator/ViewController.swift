@@ -136,17 +136,4 @@ class ViewController: UIViewController, UITextFieldDelegate  {
         lblSplitTotal.isHidden = true
         //lblButtonRound.isHidden = true
     }
-    
-    //MARK: Keyboard
-    // Hide keyboard when user touches outside the keyboard
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    // Hide when Return is pressed
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool
-    {
-        txtCheckAmount.resignFirstResponder()
-        return true
-    }
-
 }
